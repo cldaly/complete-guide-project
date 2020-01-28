@@ -7,7 +7,9 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes:Array<Recipe> = [];
+  recipes:Recipe[] = [
+    new Recipe('A Test Recipe', 'This is only a test recipe', 'https://pinchofyum.com/wp-content/uploads/Moroccan-Chickpea-Bowls-Recipe.jpg')
+  ];
 
   constructor() { }
 
